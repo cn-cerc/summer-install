@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
- tomcat)  
 	mkdir  /tomcat
 	cd /home
 	rm -rf tomcat.tar
