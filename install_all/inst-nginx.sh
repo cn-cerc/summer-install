@@ -4,17 +4,15 @@
 	mkdir /nginx
 	cd /home
 	rm -rf nginx.tar
-	wget  http://115.28.150.165:8088/images/nginx.tar
+	wget  http://115.28.151.75/images/nginx.tar
 	cd /nginx
 	rm -rf nginx_1.tar.gz	
-	wget  http://115.28.150.165:8088/profile/nginx_1.tar.gz	
+	wget  http://115.28.151.75/profile/nginx_1.tar.gz	
 	#mv /home/nginx.tar.gz /nginx
 	tar -zxvf /nginx/nginx_1.tar.gz
 	
 	cd /nginx/nginx_1/conf
-	chmod 777 sever.conf
-	sed -i -e 's|115.28.150.165:8080|totom:8080|' sever.conf
-	chmod 644 sever.conf
+
 	
 	sudo docker load </home/nginx.tar
 	cd /nginx/nginx_1

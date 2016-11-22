@@ -7,10 +7,10 @@
 	mkdir /mysql
 	cd /home
 	rm -rf mysql.tar
-	wget http://115.28.150.165:8088/images/mysql.tar
+	wget http://115.28.151.75/images/mysql.tar
 	cd /mysql
 	rm -rf mysql.tar.gz
-	wget http://115.28.150.165:8088/profile/mysql.tar.gz
+	wget http://115.28.151.75/profile/mysql.tar.gz
 	#mv /home/mymysql.tar.gz /mysql/mymysql_1
 	tar -zxvf /mysql/mysql.tar.gz 
 	cd /mysql/mysql
