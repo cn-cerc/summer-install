@@ -20,10 +20,10 @@ case "$1" in
 	mkdir  /tomcat
 	cd /home
 	rm -rf tomcat.tar
-	wget http://115.28.150.165:8088/images/tomcat.tar
+	wget summer.cerc.cn/images/tomcat.tar
 	cd /tomcat
 	rm -rf tomcat.tar.gz
-	wget  http://115.28.150.165:8088/profile/tomcat.tar.gz
+	wget  summer.cerc.cn/profile/tomcat.tar.gz
 	#mv /home/tomcat.tar.gz /tomcat
 	tar -zxvf /tomcat/tomcat.tar.gz 
 	#mv /tomcat/tomcat /tomcat/tomcat_1
@@ -41,10 +41,10 @@ case "$1" in
 	mkdir /mysql
 	cd /home
 	rm -rf mysql.tar
-	wget http://115.28.150.165:8088/images/mysql.tar
+	wget summer.cerc.cn/images/mysql.tar
 	cd /mysql
 	rm -rf mysql.tar.gz
-	wget http://115.28.150.165:8088/profile/mysql.tar.gz
+	wget summer.cerc.cn/profile/mysql.tar.gz
 	#mv /home/mymysql.tar.gz /mysql/mymysql_1
 	tar -zxvf /mysql/mysql.tar.gz 
 	cd /mysql/mysql
@@ -56,10 +56,10 @@ case "$1" in
 	mkdir /nginx
 	cd /home
 	rm -rf nginx.tar
-	wget  http://115.28.150.165:8088/images/nginx.tar
+	wget  summer.cerc.cn/images/nginx.tar
 	cd /nginx
 	rm -rf nginx_1.tar.gz	
-	wget  http://115.28.150.165:8088/profile/nginx_1.tar.gz	
+	wget  summer.cerc.cn/profile/nginx_1.tar.gz	
 	#mv /home/nginx.tar.gz /nginx
 	tar -zxvf /nginx/nginx_1.tar.gz
 	
@@ -77,10 +77,10 @@ case "$1" in
 	mkdir /mongodb
 	cd /home
 	rm -rf mongodb.tar
-	wget  http://115.28.150.165:8088/images/mongodb.tar
+	wget  summer.cerc.cn/images/mongodb.tar
 	cd /mongodb
 	rm -rf mongo.tar.gz
-	wget  http://115.28.150.165:8088/profile/mongo.tar.gz
+	wget  summer.cerc.cn/profile/mongo.tar.gz
 	tar -zxvf /mongodb/mongo.tar.gz 
 	cd /mongodb/mongo_1
 	sudo docker load </home/mongodb.tar
@@ -91,7 +91,7 @@ case "$1" in
    mkdir /memcached
    cd /home
    rm -rf memcached.tar
-   wget http://115.28.150.165:8088/images/memcached.tar
+   wget summer.cerc.cn/images/memcached.tar
    
    sudo docker load </home/memcached.tar
    docker run -dp 45001:11211 --name mymemcached memcached

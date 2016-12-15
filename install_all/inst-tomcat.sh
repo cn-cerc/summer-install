@@ -4,10 +4,10 @@
 	mkdir  /tomcat
 	cd /home
 	rm -rf tomcat.tar
-	wget http://115.28.151.75/images/tomcat.tar
+	wget summer.cerc.cn/images/tomcat.tar
 	cd /tomcat
 	rm -rf tomcat.tar.gz
-	wget  http://115.28.151.75/profile/tomcat.tar.gz
+	wget  summer.cerc.cn/profile/tomcat.tar.gz
 	#mv /home/tomcat.tar.gz /tomcat
 	tar -zxvf /tomcat/tomcat.tar.gz 
 	#mv /tomcat/tomcat /tomcat/tomcat_1
@@ -20,5 +20,4 @@
 	#sed -i -e 's|115.28.150.165:8080|totom:8080|' sever.conf
 	#chmod 644 sever.conf
 	#exit 0
-   ;;  
  

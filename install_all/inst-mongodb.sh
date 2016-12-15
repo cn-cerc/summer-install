@@ -6,10 +6,10 @@
 	mkdir /mongodb
 	cd /home
 	rm -rf mongodb.tar
-	wget  http://115.28.151.75/images/mongodb.tar
+	wget  summer.cerc.cn/images/mongodb.tar
 	cd /mongodb
 	rm -rf mongo.tar.gz
-	wget  http://115.28.151.75/profile/mongo.tar.gz
+	wget  summer.cerc.cn/profile/mongo.tar.gz
 	tar -zxvf /mongodb/mongo.tar.gz 
 	cd /mongodb/mongo
 	sudo docker load </home/mongodb.tar
