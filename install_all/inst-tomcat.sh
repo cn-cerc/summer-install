@@ -13,7 +13,7 @@
 	#mv /tomcat/tomcat /tomcat/tomcat_1
 	cd /tomcat/tomcat
     sudo docker load </home/tomcat.tar
-    docker run --name tomcat -p 8080:8080 -v $PWD/webapps:/usr/local/tomcat/webapps -v $PWD/conf:/usr/local/tomcat/conf -v $PWD/logs:/usr/local/tomcat/logs  -d tomcat1213
+    docker run --name tomcat -p 8080:8080 -v $PWD/webapps:/usr/local/tomcat/webapps -v $PWD/conf:/usr/local/tomcat/conf -v $PWD/logs:/usr/local/tomcat/logs  -d tomcat_jdk1.8
 	#修改nginx默认配置的映射地址
 	#cd /nginx/nginx_1/conf
 	#chmod 777 sever.conf
