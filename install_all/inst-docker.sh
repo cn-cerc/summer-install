@@ -5,7 +5,7 @@
 
 	cd /root
 	rm -rf docker_file.tar.gz
-	wget http://115.28.151.75/docker_file.tar.gz
+	wget summer.cerc.cn/docker_file.tar.gz
 	tar -zxvf docker_file.tar.gz
 	groupadd docker
 	dpkg -i *.deb 
