@@ -13,6 +13,6 @@
 	tar -zxvf /mongodb/mongo.tar.gz 
 	cd /mongodb/mongo
 	sudo docker load </home/mongodb.tar
-	docker run -p  27018:27017 --name mymongodb -v $PWD/db:/data/db -d mongo	
+	docker run -p  27018:27017 --name mymongodb -v $PWD/db:/data/db -d mongodb1213	
 		exit 1
 		;;
