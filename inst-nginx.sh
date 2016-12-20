@@ -11,7 +11,7 @@
 	#mv /home/nginx.tar.gz /nginx
 	tar -zxvf /nginx/nginx_1.tar.gz
 	
-	cd /nginx/nginx_1/conf
+	#cd /nginx/nginx_1/conf
 
 	
 	sudo docker load </home/nginx.tar
