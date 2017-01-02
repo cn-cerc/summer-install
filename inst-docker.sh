@@ -14,5 +14,5 @@
 	docker -v
     echo "------------docker is ok-----------"
 	exit 0
-   ;;  
- 
+
+
