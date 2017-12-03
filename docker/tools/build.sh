@@ -3,7 +3,7 @@
 cd ~
 #git clone -b beta https://github.com/cn-cerc/summer-sample.git
 
-cd ufamily
+cd summer-sample
 git pull
 mvn clean package -P serverMaster
 
