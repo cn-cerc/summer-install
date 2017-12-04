@@ -1,6 +1,6 @@
 #!/bin/bash
 app=$1
-post=$2
+port=$2
 docker stop $app
 docker rm $app
 
