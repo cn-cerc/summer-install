@@ -8,4 +8,3 @@ git pull
 mvn clean package -P serverMaster
 
 cd ~
-
