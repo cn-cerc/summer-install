@@ -1,3 +1,3 @@
 #!/bin/bash
 
-tail -n 200 -f tomat/logs/catalina.out
+tail -n 200 -f tomcat/logs/catalina.out

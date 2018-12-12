@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sh tomat/bin/shutdown.sh
+sh tomcat/bin/shutdown.sh
