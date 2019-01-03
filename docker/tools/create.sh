@@ -11,7 +11,7 @@ mkdir tomcats/$app
 mkdir tomcats/$app/webapps
 mkdir tomcats/$app/logs
 
-cp ~/summer-sample/target/summer-sample-1.3.2.war ~/tomcats/$app/webapps/ROOT.war
+cp ~/app-1.0.0.war ~/tomcats/$app/webapps/ROOT.war
 cp -R ~/summer-install/docker/factory/tomcat-conf/ ~/tomcats/$app/conf/
 
 sudo docker run -d --name $app -p $port:8080 -h $app \

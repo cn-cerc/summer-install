@@ -8,7 +8,7 @@ sudo docker stop $app
 rm -rf tomcats/$app/webapps/ROOT
 rm -rf tomcats/$app/webapps/ROOT.war
 
-cp summer-sample/target/summer-sample-1.0.0.war tomcats/$app/webapps/ROOT.war
+cp ~/app-1.0.0.war tomcats/$app/webapps/ROOT.war
 
 sudo docker start $app
 
