@@ -5,7 +5,7 @@
 2. 提取 `tomcat.tgz` 的内容
 
 ```shell
-tar -czvf tomcat.tgz
+tar -xzvf tomcat.tgz
 ```
 
 3. 重命名为 app8101
@@ -19,22 +19,24 @@ mv tomcat app8101
 
 6. 安装 memcached
 
-```
+```shell
 apt install memcached -y
 ```
 
-
 7. 安装redis
-```
+
+```shell
 apt install redis-server -y
 ```
 
 测试redis是否可以连接
-```
+
+```shell
 redis-cli
 ```
 
 8. 在当前用户根目录下创建 `public` 文件夹，并修改权限为755
+
 ```
 mkdir public
 
@@ -57,5 +59,3 @@ vim app.conf
 
 > 1. 将 update.sh 的war改为当前要部署的应用war
 > 2. 执行 sh update.sh app8101 快速更新当前应用
-
-
