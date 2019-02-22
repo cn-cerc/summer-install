@@ -5,7 +5,7 @@
 2. 提取 `tomcat.tgz` 的内容
 
 ```shell
-tar -czvf tomcat.tgz
+tar -xzvf tomcat.tgz
 ```
 
 3. 重命名为 app8101
