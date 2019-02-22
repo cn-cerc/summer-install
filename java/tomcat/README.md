@@ -39,7 +39,6 @@ redis-cli
 mkdir public
 
 chmod +755 public
-
 ```
 
 9. 配置 nginx
