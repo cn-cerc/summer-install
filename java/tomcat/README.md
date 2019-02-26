@@ -52,14 +52,22 @@ vim update.sh
 ```
 apt install openjdk-8-jdk-headless -y
 ```
-
-9.安装memcached
+9.安装Redis
+```
+apt install redis-server -y
+```
+10.启动Redis
+```
+redis-server
+redis-cli
+```
+11.安装memcached
 
 ```
 apt install memcached -y
 ```
 
-10.安装nginx
+12.安装nginx
 
 ```
 apt install nginx-full -y
@@ -67,7 +75,7 @@ apt install nginx-full -y
 
 测试nginx是否启动了
 
-11.添加nginx配置
+13.添加nginx配置
 
 ```
 cd /etc/nginx/conf.d
@@ -116,7 +124,7 @@ server {
 
 ------
 
-12.创建tomcat实例
+14.创建tomcat实例
 
 ```
 sh update.sh app8101
@@ -134,4 +142,4 @@ sh update.sh app8101
 sh update.sh app8102
 ```
 
-13.测试8101端口。
+15.测试8101端口。
