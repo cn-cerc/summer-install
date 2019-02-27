@@ -78,3 +78,37 @@ nginx -s reload
 
 
 
+# 配置Memcached缓存
+1. 进入conf目录找到context.xml
+```
+cd/root/tomcats/app8101/conf
+vim context.xml
+```
+2. 修改Memcached内网地址
+在memcachedNodes那行修改
+
+3. 重启docker
+```
+cd 
+docker restart app8101
+docker restart app8102
+```
+# 配置tomcat加速运行
+1.  进入debug.sh
+```
+sh debug.sh app8101
+cd /usr/lib/jvm/java-8-oracle/jre/lib/security
+vi java.security
+```
+在117行中改为urandom
+
+2. 退出到根目录
+```
+exit
+```
+3. 重启docker
+```
+docker restart app8101
+docker restart app8102
+```
+
