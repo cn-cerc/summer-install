@@ -93,6 +93,7 @@ requestUriIgnorePattern=".*\.(ico|png|gif|jpg|css|js)$"
 transcoderFactoryClass="de.javakaffee.web.msm.serializer.kryo.KryoTranscoderFactory"/>
   ```
 更改memcachedNodes="m-wz9a71e150967454.memcache.rds.aliyuncs.com:11211"中的内网地址
+
 4. 重启docker
 ```
 cd 
