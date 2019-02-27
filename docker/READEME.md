@@ -76,8 +76,6 @@ nginx -s reload
 ```
 13. 测试。
 
-
-
 # 配置Memcached缓存
 1. 进入conf目录找到context.xml
 ```
@@ -85,9 +83,12 @@ cd/root/tomcats/app8101/conf
 vim context.xml
 ```
 2. 修改Memcached内网地址
-在memcachedNodes那行修改
+  ```
+memcachedNodes="m-wz9a71e150967454.memcache.rds.aliyuncs.com:11211"
+  ```
+更改""里的内网地址
 
-3. 重启docker
+4. 重启docker
 ```
 cd 
 docker restart app8101
