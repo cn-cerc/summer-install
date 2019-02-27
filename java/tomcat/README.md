@@ -1,61 +1,106 @@
-# 使用说明
+# Tomcat部署
 
-1. 更新时间为北京时间
+### 使用说明
 
-2. 提取 `tomcat.tgz` 的内容
+1. 拷贝文件到root目录
 
-```shell
-tar -xzvf tomcat.tgz
+```
+cd
+cp summer-install/java/tomcat/* .
 ```
 
-3. 重命名为 app8101
+2. 解压压缩文件
+
+```
+tar -zxvf tomcat.tgz
+```
+
+3. 更改tomcat名字
 
 ```
 mv tomcat app8101
 ```
 
-4. 若需双机热部署，可再次解压，并重命名为 app8102
-5. 将tomcat2的server.xml端口修改为 `8102`，其他端口也要一并修改，不能与app8101的端口发生冲突
-
-6. 安装 memcached
-
-```shell
-apt install memcached -y
-```
-
-7. 安装redis
-
-```shell
-apt install redis-server -y
-```
-
-测试redis是否可以连接
-
-```shell
-redis-cli
-```
-
-8. 在当前用户根目录下创建 `public` 文件夹，并修改权限为755
+4. 创建public文件夹
 
 ```
 mkdir public
-
-chmod +755 public
 ```
 
-9. 配置 nginx
+5. 更改public权限
 
-```shell
+```
+chmod 755 public
+```
+
+6. 上传war包
+
+7. 更改war包
+
+```
+vim update.sh
+```
+
+更改war包名字
+
+8. 安装jdk8
+
+使用javac查看安装命令
+
+```
+apt install openjdk-8-jdk-headless -y
+```
+
+9. 安装Redis
+
+```
+apt install redis-server -y
+```
+
+10. 启动Redis
+
+```
+redis-server
+redis-cli
+```
+
+11. 安装memcached
+
+```
+apt install memcached -y
+```
+
+12. 安装nginx
+
+```
 apt install nginx-full -y
 ```
 
-```shell
-cd /etc/nginx/conf.d
+测试nginx是否启动了
 
+13. 添加nginx配置
+
+```
+cd /etc/nginx/conf.d
 vim app.conf
 ```
 
-10. 更新项目，参考 `update.sh`
+14. 创建tomcat实例
 
-> 1. 将 update.sh 的war改为当前要部署的应用war
-> 2. 执行 sh update.sh app8101 快速更新当前应用
+```
+sh update.sh app8101
+```
+
+如需部署tomcat8102端口则需要再次解压tomcat.tgz
+
+更改tomcat名字为app8102
+
+进入app8102更改server.xml中的端口
+
+再次创建tomcat实例
+
+```
+sh update.sh app8102
+```
+
+15. 测试8101端口
