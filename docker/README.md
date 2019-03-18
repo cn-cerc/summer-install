@@ -79,7 +79,7 @@ nginx -s reload
 # 配置Memcached缓存
 1. 进入conf目录找到context.xml
 ```
-cd/root/tomcats/app8101/conf
+cd /root/tomcats/app8101/conf
 vim context.xml
 ```
 2. 修改Memcached内网地址
