@@ -119,3 +119,26 @@ docker restart app8101
 docker restart app8102
 ```
 
+# Docker构建镜像缓慢解决方案
+使用Docker拉镜像的时候，出现下面错误
+```
+net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+```
+
+因为在下载官方镜像点的镜像国内访问速度太慢，所以报错，使用加速器就可以解决这个问题
+### 1. Ubuntu系统自行创建daemon.json
+```
+vim /etc/docker/daemon.json
+```
+### 2. 加入
+```
+{
+    "registry-mirrors":["https://docker.mirrors.ustc.edu.cn"]
+}
+```
+### 3.重启守护进程
+```
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
