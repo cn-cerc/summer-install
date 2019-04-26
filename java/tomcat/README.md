@@ -60,14 +60,28 @@ apt install redis-server -y
 10. 启动Redis
 
 ```
-redis-server
-redis-cli
+/etc/init.d/redis-server restart
+```
+
+测试redis是否可以连接
+```
+redis-cli 
 ```
 
 11. 安装memcached
 
 ```
 apt install memcached -y
+```
+
+测试 memcached 是否可以连接
+```
+telnet 127.0.0.1 11211
+```
+
+退出
+```
+quit
 ```
 
 12. 安装nginx
