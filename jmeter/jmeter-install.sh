@@ -8,9 +8,10 @@ sudo apt install default-jdk -y
 
 sudo apt install htop -y 
 
-wget http://mirror.bit.edu.cn/apache//jmeter/binaries/apache-jmeter-5.0.tgz 
+#get http://mirror.bit.edu.cn/apache//jmeter/binaries/apache-jmeter-5.0.tgz 
+wget http://ftp.cuhk.edu.hk/pub/packages/apache.org//jmeter/binaries/apache-jmeter-5.1.1.tgz
 
-tar -xzvf apache-jmeter-5.0.tgz
+tar -xzvf apache-jmeter-5.1.1.tgz
 
 # 修改 jmeter.properties 
 # set server.rmi.ssl.disable=true
