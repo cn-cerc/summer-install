@@ -8,6 +8,8 @@
 
 ### docker
 
+docker[说明](/docker)
+
 该目录下的脚本主要用于部署基于docker进行虚拟化部署的应用。
 
 1. 运行 [docker/factory](docker/factory) 目录下的 `build.sh` 进行客制化的镜像下载
