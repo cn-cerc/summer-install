@@ -76,7 +76,8 @@ nginx -s reload
 ```
 13. 测试。
 
-# 配置Memcached缓存
+### 配置Memcached缓存
+
 1. 进入conf目录找到context.xml
 ```
 cd /root/tomcats/app8101/conf
@@ -100,7 +101,8 @@ cd
 docker restart app8101
 docker restart app8102
 ```
-# 配置tomcat加速运行
+### 配置tomcat加速运行
+
 1.  进入debug.sh
 ```
 sh debug.sh app8101
@@ -119,3 +121,10 @@ docker restart app8101
 docker restart app8102
 ```
 
+### 批次更新指定的docker
+
+1、拷贝 function-update 下的脚本到根目录
+
+2、修改每个更新脚本对应的容器名称，即可快速更新，减少手动输入app8101的麻烦
+
+3、批次更新针对的是一台机器同时部署app，admin，task的情况而设计，也可根据需要自行应用到一台服务器一个应用类型的情况
