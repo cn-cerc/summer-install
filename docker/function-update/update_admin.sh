@@ -17,7 +17,7 @@ update_admin(){
     rm -rf tomcats/$app/webapps/ROOT
     rm -rf tomcats/$app/webapps/ROOT.war
 
-    cp diaoyou-admin-1.0.0.war ~/tomcats/$app/webapps/ROOT.war 
+    cp ~/diaoyou-admin-1.0.0.war ~/tomcats/$app/webapps/ROOT.war 
 
     echo "docker start $app."
     sudo docker start $app
