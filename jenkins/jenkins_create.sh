@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~
+
 docker pull jenkins/jenkins:lts
 
 docker stop jenkins && docker rm jenkins 
