@@ -4,4 +4,4 @@
 docker pull redis
 
 # 启动镜像
-docker run —name redis -d redis
+docker run --name redis -d -p 6379:6379 --restart=always redis
