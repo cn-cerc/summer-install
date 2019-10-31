@@ -3,6 +3,8 @@
 # 更新系统
 apt update && apt upgrade -y
 
+# 必备软件
+apt install htop
 apt install docker.io -y
 
 # 构建镜像
