@@ -1,19 +1,23 @@
 #!/bin/bash
 
+cd ~
+
 # 更新系统
 apt update && apt upgrade -y
 
 # 必备软件
+apt install git -y
 apt install htop
 apt install docker.io -y
 
+# 获取脚本
+git clone https://github.com/cn-cerc/summer-install.git
+
 # 构建镜像
-cd factory
-sh build.sh
+sh ~/summer-install/factory/build.sh
 
 # 拷贝脚本
-cd ../tools
-cp -r *.sh ~
+cp -r ~/summer-install/factory/tools/*.sh ~
 
 # 创建容器
 cd ~
