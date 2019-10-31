@@ -11,7 +11,7 @@ sh build.sh
 
 # 拷贝脚本
 cd ../tools
-cp -r *.sh .
+cp -r *.sh ~
 
 # 创建容器
 cd ~
