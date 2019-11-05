@@ -9,7 +9,7 @@
 实际物理位置
 
 ```
-/var/lib/docker/volumes/jenkins_home/_data
+/var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
 ```
 
 .m2 目录的位置
