@@ -12,8 +12,17 @@
 
 2. 拷贝以下命令并执行，即可一键完成docker环境的初始化工作
 
+   首选环境
+
    ```shell
    wget -O auto-build.sh https://raw.githubusercontent.com/cn-cerc/summer-install/develop/docker/auto-build.sh
+
+   sh auto-build.sh
+   ```
+
+   备用环境
+   ```shell
+   wget -O auto-build.sh https://gitee.com/jayun_site/summer-install/raw/develop/docker/auto-build.sh
    
    sh auto-build.sh
    ```
