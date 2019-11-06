@@ -14,7 +14,8 @@ apt install docker.io -y
 git clone https://github.com/cn-cerc/summer-install.git
 
 # 构建镜像
-sh ~/summer-install/factory/build.sh
+cd ~/summer-install/docker/factory
+sh build.sh
 
 # 拷贝脚本
 cp -r ~/summer-install/factory/tools/*.sh ~
