@@ -27,7 +27,7 @@
    sh auto-build.sh
    ```
 
-3. 根据项目的需要，自行调整``updage.sh`的app名称和路径
+3. 根据项目的需要，自行调整`update.sh`的app名称和路径
 
 4. 执行`sh debug.sh app8101`进入docker容器目录
 
