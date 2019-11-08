@@ -18,7 +18,7 @@ cd ~/summer-install/docker/factory
 sh build.sh
 
 # 拷贝脚本
-cp -r ~/summer-install/factory/tools/*.sh ~
+cp -r ~/summer-install/docker/tools/*.sh ~
 
 # 创建容器
 cd ~
