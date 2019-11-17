@@ -5,7 +5,6 @@ sudo docker stop $app
 sudo docker rm $app
 
 cd ~
-touch summer-application.properties
 mkdir tomcats
 mkdir tomcats/$app
 mkdir tomcats/$app/webapps
