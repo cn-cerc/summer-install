@@ -1,4 +1,10 @@
-# Jenkins 
+# docker-jenkins
+
+宿主地址
+
+```
+/var/lib/docker/volumes/jenkins_home/_data/workspace
+```
 
 容器密码位置
 
