@@ -10,6 +10,16 @@ apt install git -y
 apt install htop
 apt install docker.io -y
 
+# 镜像加速
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://gmd9rm2w.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
 # 获取脚本
 git clone https://gitee.com/jayun_site/summer-install.git
 
