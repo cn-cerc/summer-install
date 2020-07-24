@@ -10,6 +10,15 @@ apt install git -y
 apt install htop
 apt install docker.io -y
 
+# 安装zsh
+apt install zsh -y
+
+# 切换至zsh
+chsh -s /bin/zsh
+
+# 下载插件
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+
 # 镜像加速
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
