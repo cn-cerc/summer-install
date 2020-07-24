@@ -1,5 +1,12 @@
 #/bin/bash
 
+# 删除容器
+docker stop sonatype/nexus
+docker rm sonatype/nexus
+
+# 删除镜像
+docker rmi sonatype/nexus
+
 # 创建存储文件夹
 mkdir /var/lib/docker/volumes/nexus-data && chown -R 200 /var/lib/docker/volumes/nexus-data
 
