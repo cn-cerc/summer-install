@@ -23,7 +23,7 @@
    **国内源**
 
    ```shell
-   wget -O auto-build.sh https://gitee.com/jayun_site/summer-install/raw/develop/docker/auto_build_cn.sh
+   wget -O auto-build.sh https://gitee.com/mimrc/summer-install/raw/develop/docker/auto_build_cn.sh
    
    sh auto-build.sh
    ```
