@@ -30,7 +30,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 # 获取脚本
-git clone https://gitee.com/jayun_site/summer-install.git
+git clone https://gitee.com/mimrc/summer-install.git
 
 # 构建镜像
 cd ~/summer-install/docker/factory
