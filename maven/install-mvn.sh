@@ -1,4 +1,10 @@
 #!/bin/bash
 
 cd ~
-wget https://mirror-hk.koddos.net/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+wget http://oss.mimrc.com/tools/linux/apache-maven-3.8.1-bin.tar.gz
+
+tar -xzvf apache-maven-3.8.1-bin.tar.gz
+
+rm -f apache-maven-3.8.1-bin.tar.gz
+
+mv apache-maven-3.8.1 maven
