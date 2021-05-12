@@ -10,6 +10,7 @@ mkdir tomcats/$app/webapps/ROOT
 mkdir tomcats/$app/logs
 mkdir tomcats/$app/root
 
+# 复制静态网页内容到ROOT目录下
 cp -r ~/www-zntieke-com/* ~/tomcats/$app/webapps/ROOT/
 
 sudo docker run -d --name $app -p $port:8080 -h $app \
