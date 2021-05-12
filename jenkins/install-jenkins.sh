@@ -5,7 +5,7 @@ docker stop jenkins
 docker rm jenkins
 
 # 删除镜像
-docker rmi jenkins/jenkins
+docker rmi jenkins/jenkins:lts
 
 # 创建容器
 docker run -d --name jenkins -p 8080:8080 -p 50000:50000 \
