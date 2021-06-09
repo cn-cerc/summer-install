@@ -15,17 +15,13 @@
    **官方源**
 
    ```shell
-   wget -O auto-build.sh https://raw.githubusercontent.com/cn-cerc/summer-install/develop/docker/auto_build_en.sh
-   
-   sh auto-build.sh
+   wget -O auto-build.sh https://raw.githubusercontent.com/cn-cerc/summer-install/develop/docker/auto_build_en.sh -O - | sh
    ```
 
    **国内源**
 
    ```shell
-   wget -O auto-build.sh https://gitee.com/mimrc/summer-install/raw/develop/docker/auto_build_cn.sh
-   
-   sh auto-build.sh
+   wget -O auto-build.sh https://gitee.com/mimrc/summer-install/raw/develop/docker/auto_build_cn.sh -O - | sh
    ```
 
 3. 根据项目的需要，自行调整`update.sh`的app名称和路径
