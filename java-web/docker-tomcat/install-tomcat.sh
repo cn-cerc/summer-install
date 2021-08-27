@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 拉取官方最新的 tomcat 镜像
-docker pull tomcat
+docker pull tomcat:8.5.70-jdk8
 
 # 建立一个临时的容器 tomcat 
 docker run --name tomcat -d --rm tomcat

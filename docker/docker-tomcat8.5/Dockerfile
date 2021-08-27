@@ -1,7 +1,5 @@
-FROM docker.io/dordoka/tomcat
+FROM tomcat:8.5.70-jdk8
 MAINTAINER cn.cerc.summer
-
-#RUN apt-get update 
 
 ENV CATALINA_OPTS -Dsecurerandom.source=file:/dev/urandom
 
@@ -9,12 +7,5 @@ ENV CATALINA_OPTS -Dsecurerandom.source=file:/dev/urandom
 ENV TIME_ZONE Asia/Shanghai
 RUN ln -sf /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime
 RUN echo ${TIME_ZONE} > /etc/timezone
-
-# synac with memcached
-ADD tomcat-lib/*.jar /opt/tomcat/lib/
-ADD tomcat-conf/*.* /opt/tomcat/conf/
-
-# add crypt with uzu
-ADD crypt/*.jar /usr/lib/jvm/java-8-oracle/jre/lib/security/
 
 EXPOSE 8080
