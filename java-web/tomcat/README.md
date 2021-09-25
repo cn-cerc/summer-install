@@ -1,5 +1,31 @@
 # Tomcat部署
 
+## 性能优化
+
+```
+# java
+# update java security 117 行
+cd /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security
+vim java.security
+
+# tomcat 
+
+# 设置静态资源缓存
+vim conf/context.xml
+<Resources cachingAllowed="true" cacheMaxSize="102400" />
+
+cd /root/tomcats/app8101/bin
+vim catalina.sh
+
+# 设置运行时区
+export JAVA_OPTS="$JAVA_OPTS -Duser.timezone=Asia/shanghai"
+
+# 设置虚拟机内存
+JAVA_OPTS="-Xms4000M -Xmx4000M -Xmn2000M -XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=512M" 
+JAVA_OPTS="-Xms3072m -Xmx3072M"
+
+```
+
 ### 使用说明
 
 1. 拷贝文件到root目录

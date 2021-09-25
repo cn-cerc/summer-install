@@ -18,10 +18,8 @@ cp ~/summer-install/java/tomcat/tools/* ~
 
 cd ~
 mkdir tomcats
-tar -zxvf tomcat.tgz -C ~/tomcats/
-cd tomcats
-mv tomcat app8101
+touch ~/summer-application.properties
 
-# update java security 117
-# cd /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security
-# vim java.security
+tar -zxvf apache-tomcat-8.5.71.tar.gz -C ~/tomcats/
+cd tomcats
+mv apache-tomcat-8.5.71 app8101
