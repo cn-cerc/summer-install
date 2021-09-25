@@ -21,3 +21,7 @@ mkdir tomcats
 tar -zxvf tomcat.tgz -C ~/tomcats/
 cd tomcats
 mv tomcat app8101
+
+# update java security 117
+# cd /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security
+# vim java.security
