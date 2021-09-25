@@ -1,5 +1,11 @@
 # Tomcat部署
 
+## 自动部署
+
+```
+wget -O auto-build.sh https://gitee.com/mimrc/summer-install/raw/develop/java-web/tomcat/auto-build.sh -O - | sh
+```
+
 ## 性能优化
 
 ```
