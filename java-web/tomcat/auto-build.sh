@@ -14,8 +14,8 @@ git clone https://gitee.com/mimrc/summer-install.git
 
 # install tomcat
 cd ~
-cp ~/summer-install/java/tomcat/tools/* ~
-cp ~/summer-install/java/tomcat/apache-tomcat-8.5.71.tar.gz ~
+cp ~/summer-install/java-web/tomcat/tools/* ~
+cp ~/summer-install/java-web/tomcat/apache-tomcat-8.5.71.tar.gz ~
 
 cd ~
 mkdir tomcats
