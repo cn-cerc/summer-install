@@ -2,4 +2,4 @@
 
 app=$1
 
-sh ~/$app/bin/shutdown.sh
+sh ~/tomcats/$app/bin/shutdown.sh
