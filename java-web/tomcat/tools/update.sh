@@ -1,15 +1,21 @@
 #!/bin/bash
 
+cd ~
+
 app=$1
 
-sh ~/$app/bin/shutdown.sh
+# 停止服务容器
+sh ~/tomcats/$app/bin/shutdown.sh
 
-rm -rf ~/$app/webapps/ROOT
+# 删除应用文件
+rm -rf ~/tomcats/$app/webapps/ROOT
+rm -rf ~/tomcats/$app/webapps/ROOT.war
 
-rm -rf ~/$app/webapps/ROOT.war
+# 复制应用文件
+cp ~/diteng-app-1.0.0.war ~/tomcats/$app/webapps/ROOT.war
 
-cp ~/fishing-project/fishing-app/target/fishing-app-1.0.0.war ~/$app/webapps/ROOT.war
+# 启动服务容器
+sh ~/tomcats/$app/bin/startup.sh
 
-sh ~/$app/bin/startup.sh
-
-tail -n 200 -f ~/$app/logs/catalina.out
+# 监控运行日志
+tail -n 512 -f ~/tomcats/$app/logs/catalina.out
