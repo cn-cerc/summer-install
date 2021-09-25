@@ -9,6 +9,9 @@ apt install openjdk-8-jdk-headless -y
 # install git
 apt install git -y
 
+# install htop
+apt install htop -y
+
 # get summer-install
 git clone https://gitee.com/mimrc/summer-install.git
 
