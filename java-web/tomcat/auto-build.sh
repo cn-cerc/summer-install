@@ -10,7 +10,7 @@ apt install openjdk-8-jdk-headless -y
 apt install git -y
 
 # get summer-install
-git clone https://github.com/cn-cerc/summer-install.git
+git clone https://gitee.com/mimrc/summer-install.git
 
 # install tomcat
 cd ~
