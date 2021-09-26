@@ -4,4 +4,6 @@ app=$1
 
 sh ~/tomcats/$app/bin/shutdown.sh
 
+sleep 10
+
 sh ~/tomcats/$app/bin/startup.sh
