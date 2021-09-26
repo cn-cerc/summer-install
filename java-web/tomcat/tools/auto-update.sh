@@ -11,6 +11,9 @@ update_tomcat () {
     # 停止服务容器
     sh ~/tomcats/$app/bin/shutdown.sh
 
+    # 等待彻底停机
+    sleep 10
+
     # 删除应用文件
     rm -rf ~/tomcats/$app/webapps/ROOT
     rm -rf ~/tomcats/$app/webapps/ROOT.war
