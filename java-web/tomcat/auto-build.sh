@@ -24,6 +24,6 @@ cd ~
 mkdir tomcats
 touch ~/summer-application.properties
 
-tar -zxvf apache-tomcat-8.5.71.tar.gz -C ~/tomcats/
+tar -zxvf apache-tomcat-9.0.53.tar.gz -C ~/tomcats/
 cd tomcats
-mv apache-tomcat-8.5.71 app8101
+mv apache-tomcat-9.0.53 app8101
