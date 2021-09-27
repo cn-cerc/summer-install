@@ -27,8 +27,7 @@ vim catalina.sh
 export JAVA_OPTS="$JAVA_OPTS -Duser.timezone=Asia/shanghai"
 
 # 设置虚拟机内存
-JAVA_OPTS="-Xms4000M -Xmx4000M -Xmn2000M -XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=512M" 
-JAVA_OPTS="-Xms3072m -Xmx3072M"
+JAVA_OPTS='-server -Xms2048m -Xmx2048m -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=512m -XX:SurvivorRatio=8'
 
 ```
 
