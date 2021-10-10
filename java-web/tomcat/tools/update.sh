@@ -16,6 +16,3 @@ cp ~/diteng-app-1.0.0.war ~/tomcats/$app/webapps/ROOT.war
 
 # 启动服务容器
 sh ~/tomcats/$app/bin/startup.sh
-
-# 监控运行日志
-tail -n 512 -f ~/tomcats/$app/logs/catalina.out
