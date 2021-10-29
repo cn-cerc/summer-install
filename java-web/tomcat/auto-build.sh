@@ -4,7 +4,8 @@
 apt update && apt upgrade -y
 
 # install java8
-apt install openjdk-8-jdk-headless -y
+# apt install openjdk-8-jdk-headless -y
+apt install openjdk-11-jdk-headless -y
 
 # install git
 apt install git -y
