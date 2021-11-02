@@ -28,3 +28,4 @@ touch ~/summer-application.properties
 tar -zxvf apache-tomcat-9.0.53.tar.gz -C ~/tomcats/
 cd tomcats
 mv apache-tomcat-9.0.53 app8101
+cd ~
