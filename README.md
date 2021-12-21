@@ -6,7 +6,13 @@
 
 ## 二、使用说明
 
-### 一键部署
+### tomcat 一键部署
+
+```shell
+wget -O auto-build.sh https://gitee.com/mimrc/summer-install/raw/develop/java-web/tomcat/auto-build.sh -O - | sh
+```
+
+### docker 一键部署
 
 1. 远程登录Linux系统的用户根目录
 
