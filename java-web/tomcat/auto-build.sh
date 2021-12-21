@@ -13,7 +13,7 @@ apt install git -y
 # install htop
 apt install htop -y
 
-# get summer-install
+# clone summer-install
 git clone https://gitee.com/mimrc/summer-install.git
 
 # install tomcat
@@ -25,7 +25,14 @@ cd ~
 mkdir tomcats
 touch ~/summer-application.properties
 
+# 创建main环境
 tar -zxvf apache-tomcat-9.0.53.tar.gz -C ~/tomcats/
 cd tomcats
-mv apache-tomcat-9.0.53 app8101
+mv apache-tomcat-9.0.53 diteng-app-main
+cd ~
+
+# 创建 safe 环境
+tar -zxvf apache-tomcat-9.0.53.tar.gz -C ~/tomcats/
+cd tomcats
+mv apache-tomcat-9.0.53 diteng-app-safe
 cd ~
