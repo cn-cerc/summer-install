@@ -2,11 +2,6 @@
 
 cd ~
 
-# 停止2号机 
-sh shutdown.sh diteng-app-safe 
-
-sleep 10
-
 # 获取应用文件
 wget http://172.16.2.42/job/diteng-main/ws/diteng-app/target/diteng-app-1.0.0.war -O diteng-app-main-1.0.0.war
 wget http://172.16.2.42/job/diteng-safe/ws/diteng-app/target/diteng-app-1.0.0.war -O diteng-app-safe-1.0.0.war
@@ -31,4 +26,4 @@ update_tomcat () {
 }
 
 # 更新1号服务
-update_tomcat diteng-app-main 
+update_tomcat app8101
