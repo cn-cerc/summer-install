@@ -26,6 +26,7 @@ docker pull  $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 
 # 创建容器版本
 docker run --name app-8101 -d -p 8101:8080 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
+sleep 10
 docker run --name app-8102 -d -p 8102:8080 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 
 # docker logs -n512 -f app-8101
