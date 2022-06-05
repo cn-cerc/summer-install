@@ -9,6 +9,9 @@ NAMESPACE=diteng-release
 # 接收镜像运行版本，默认 latest
 TAG=$1
 
+# 删除当前容器
+docker ps | grep $SOURCE_IMAGE  | awk '{print $1}' | xargs docker rm -f
+
 # 删除历史镜像
 docker images | grep $SOURCE_IMAGE  | awk '{print $3}' | xargs docker rmi -f
 
