@@ -24,6 +24,9 @@ docker login -p password --username=user@aliyun.com $REGISTRY_HOST
 # 拉取镜像版本
 docker pull  $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 
+# 显示镜像列表
+docker images
+
 # 创建容器版本
 docker run --name app-8101 -d -p 8101:8080 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 sleep 10
