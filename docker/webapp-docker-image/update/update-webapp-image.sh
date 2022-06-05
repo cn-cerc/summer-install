@@ -12,11 +12,11 @@ TAG=$1
 # 删除当前容器
 docker ps | grep $SOURCE_IMAGE  | awk '{print $1}' | xargs docker rm -f
 
-# 删除历史镜像
-docker images | grep $SOURCE_IMAGE  | awk '{print $3}' | xargs docker rmi -f
-
 # 显示镜像列表
 docker images
+
+# 删除历史镜像
+docker images | grep $SOURCE_IMAGE  | awk '{print $3}' | xargs docker rmi -f
 
 # 登录私服仓库
 docker login -p password --username=user@aliyun.com $REGISTRY_HOST
