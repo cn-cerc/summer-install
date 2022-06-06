@@ -22,7 +22,7 @@ rm -rf ROOT.war
 wget $WAR_HOST -O ROOT.war
 
 # 构建应用镜像
-docker build -t $SOURCE_IMAGE:$TAG $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
+docker build -t $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG .
 
 # 显示镜像列表
 docker images
