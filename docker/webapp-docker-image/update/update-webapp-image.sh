@@ -27,9 +27,9 @@ docker pull  $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 # 显示镜像列表
 docker images
 
-# 创建容器版本
-docker run --name app-8101 -d -p 8101:8080 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
+# 创建容器版本-每个容器CPU权重是 512/1024
+docker run --name app-8101 -d -p 8101:8080 --cpu-shares 512 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 sleep 10
-docker run --name app-8102 -d -p 8102:8080 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
+docker run --name app-8102 -d -p 8102:8080 --cpu-shares 512 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 
 # docker logs -n512 -f app-8101

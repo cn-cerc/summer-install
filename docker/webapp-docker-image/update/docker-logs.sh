@@ -1,4 +1,4 @@
 #!/bin/bash
 app=$1
 
-sudo docker logs --tail 512 -f $app
+sudo docker logs --n512 -f $app
