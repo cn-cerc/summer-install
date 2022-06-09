@@ -27,7 +27,7 @@ docker ps
 docker stop app8101
 docker rm app8101
 # 更新1号容器
-docker run --name app8101 -d -p 8101:8080 --restart always --cpu-shares 512 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
+docker run --name app8101 -d -p 8101:8080 --hostname app8101 --restart always --cpu-shares 512 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
 
 sleep 30
 
@@ -35,4 +35,4 @@ sleep 30
 docker stop app8102
 docker rm app8102
 # 更新2号容器
-docker run --name app8102 -d -p 8102:8080 --restart always --cpu-shares 512 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
+docker run --name app8102 -d -p 8102:8080 --hostname app8101 --restart always --cpu-shares 512 $REGISTRY_HOST/$NAMESPACE/$SOURCE_IMAGE:$TAG
